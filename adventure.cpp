@@ -8,17 +8,18 @@ int main() {
   string userResponse; //initialize user input variable
   bool goodEnding = true; //default to good ending until proven otherwise
 
-  cout << "hello friend! are you ready for an adventure?\n";
+  cout << "hello friend! are you ready for an adventure? ";
   getline (cin, userResponse); //using getline to capture multiple words if needed
 
   if (userResponse == "yes") {
-    cout << "fantastic, off we go then!\n";
+    cout << "fantastic, off we go then!\n\n";
   } else if (userResponse == "hell yes") {
-    cout << "that's the spirit! let's go!\n";
+    cout << "that's the spirit! let's go!\n\n";
   } else if (userResponse == "no") {
-    cout << "damn that's no fun. i'm taking you on an adventure out of spite now.\n";
+    cout << "damn that's no fun. i'm taking you on an adventure out of spite now.\n\n";
+    goodEnding = false;
   } else {
-    cout << "welp... i haven't been programmed to understand that answer, but i'll assume it was some form of yes! let's go!\n";
+    cout << "welp... i haven't been programmed to understand that answer, but i'll assume it was some form of yes! let's go!\n\n";
   }
 
   //cout << "your response was: " << userResponse << "\n";
@@ -27,6 +28,10 @@ int main() {
   //cout << "your response has been changed to: " << userResponse << "\n\n";
   //here is where i will put some more code
 
-  cout << "\n"; //print an empty line before end of program, looks nice
+  if (goodEnding) {
+    cout << "and you lived happily ever after.\n\nthe end.\n\n";
+  } else {
+    cout << "and you died a horrible fiery death.\n\nthe end.\n\n";
+  }
   return 0;
 }
