@@ -7,6 +7,7 @@ int main() {
   
   string userResponse; //initialize user input variable
   bool goodEnding = true; //default to good ending until proven otherwise
+  int secretsFound = 0; //keeps track of how many secret messages were found. total = 1
 
   cout << "hello friend! are you ready for an adventure? ";
   getline (cin, userResponse); //using getline to capture multiple words if needed
@@ -15,6 +16,7 @@ int main() {
     cout << "fantastic, off we go then!\n\n";
   } else if (userResponse == "hell yes") {
     cout << "that's the spirit! let's go!\n\n";
+    secretsFound += 1;
   } else if (userResponse == "no") {
     cout << "damn that's no fun. i'm taking you on an adventure out of spite now.\n\n";
     goodEnding = false;
