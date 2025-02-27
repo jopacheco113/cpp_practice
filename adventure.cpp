@@ -8,6 +8,6 @@ int main() {
   cout << "hello friend! are you ready for an adventure?\n";
   cin >> userResponse;
   cout << "your response was: " << userResponse << "\n";
-  //here is where i will put some code
+  //here is where i will put some more code
   return 0;
 }
