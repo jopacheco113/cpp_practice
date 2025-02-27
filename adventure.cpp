@@ -6,8 +6,11 @@ using namespace std;
 int main() {
   string userResponse;
   cout << "hello friend! are you ready for an adventure?\n";
-  cin >> userResponse;
+  getline (cin, userResponse); //using getline to capture multiple words if needed
   cout << "your response was: " << userResponse << "\n";
+  cout << "please enter a different word for testing purposes: ";
+  getline (cin,userResponse);
+  cout << "your response has been changed to: " << userResponse << "\n\n";
   //here is where i will put some more code
   return 0;
 }
