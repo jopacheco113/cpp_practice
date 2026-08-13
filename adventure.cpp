@@ -33,7 +33,7 @@ int main() {
   if (goodEnding) {
     cout << "and you lived happily ever after.\n\nthe end.\n\n";
   } else {
-    cout << "and you died a horrible fiery death.\n\nthe end.\n\n";
+    cout << "and you died a horrible gruesome death.\n\nthe end.\n\n";
   }
   return 0;
 }
