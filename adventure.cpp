@@ -6,23 +6,35 @@ using namespace std;
 int main() {
   
   string userResponse; //initialize user input variable
+  string pausePrompt; //initialize variable to pause the story and wait for user input
   bool goodEnding = true; //default to good ending until proven otherwise
   int secretsFound = 0; //keeps track of how many secret messages were found. total = 1
 
-  cout << "hello friend! are you ready for an adventure? ";
+  cout << "hello friend! are you ready for an adventure?\n\n";
   getline (cin, userResponse); //using getline to capture multiple words if needed
 
   if (userResponse == "yes") {
-    cout << "fantastic, off we go then!\n\n";
+    cout << "\nfantastic, off we go then!\n\n";
   } else if (userResponse == "hell yes") {
-    cout << "that's the spirit! let's go!\n\n";
+    cout << "\nthat's the spirit! let's go!\n\n";
     secretsFound += 1;
   } else if (userResponse == "no") {
-    cout << "damn that's no fun. i'm taking you on an adventure out of spite now.\n\n";
+    cout << "\ndamn that's no fun. i'm taking you on an adventure out of spite now.\n\n";
     goodEnding = false;
   } else {
-    cout << "welp... i haven't been programmed to understand that response, but i'll assume it was some form of yes! let's go!\n\n";
+    cout << "\nwelp... i haven't been programmed to understand that response, but i'll assume it was some form of yes! let's go!\n\n";
   }
+
+  cout << "\npress enter to continue...\n";
+  getline (cin, pausePrompt); //user will hit enter to continue the story
+  cout << "\n";
+
+  cout << "here is where we will describe the first scenario the player will face.\n\n";
+  cout << "they will be presented with several enticing options, and must decide what to do next.\n\n";
+
+  cout << "\npress enter to continue...\n";
+  getline (cin, pausePrompt); //user will hit enter to continue the story
+  cout << "\n";
 
   //cout << "your response was: " << userResponse << "\n";
   //cout << "please enter a different word for testing purposes: ";
@@ -31,9 +43,9 @@ int main() {
   //here is where i will put some more code
 
   if (goodEnding) {
-    cout << "and you lived happily ever after.\n\nthe end.\n\n";
+    cout << "\nand you lived happily ever after.\n\nthe end.\n\n";
   } else {
-    cout << "and you died a horrible gruesome death.\n\nthe end.\n\n";
+    cout << "\nand you died a horrible gruesome death.\n\nthe end.\n\n";
   }
   return 0;
 }
