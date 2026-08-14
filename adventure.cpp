@@ -21,7 +21,7 @@ int main() {
     cout << "damn that's no fun. i'm taking you on an adventure out of spite now.\n\n";
     goodEnding = false;
   } else {
-    cout << "welp... i haven't been programmed to understand that answer, but i'll assume it was some form of yes! let's go!\n\n";
+    cout << "welp... i haven't been programmed to understand that response, but i'll assume it was some form of yes! let's go!\n\n";
   }
 
   //cout << "your response was: " << userResponse << "\n";

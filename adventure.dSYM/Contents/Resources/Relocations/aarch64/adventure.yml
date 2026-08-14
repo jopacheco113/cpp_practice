@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/jocelyn/Documents/vscode/cpp_practice/cpp_practice/adventure'
+relocations:     []
+...
